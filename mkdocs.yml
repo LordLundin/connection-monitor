@@ -1,11 +1,11 @@
-site_name: example-project
-repo_url: https://github.com/fpgmaas/example-project
-site_url: https://fpgmaas.github.io/example-project
-site_description: This is a template repository for Python projects that use Poetry for their dependency management.
-site_author: Florian Maas
+site_name: connection-monitor
+repo_url: https://github.com/LordLundin/connection-monitor
+site_url: https://github.com/LordLundin/connection-monitor
+site_description: A simple utility to monitor inbound and outgoing connections.
+site_author: Lord Lundin
 edit_uri: edit/main/docs/
-repo_name: fpgmaas/example-project
-copyright: Maintained by <a href="https://fpgmaas.com">Florian</a>.
+repo_name: LordLundin/connection-monitor
+copyright: Maintained by <a href="https://github.com/LordLundin">Lord Lundin</a>.
 
 nav:
   - Home: index.md
@@ -43,9 +43,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/fpgmaas/example-project
-    - icon: fontawesome/brands/python
-      link: https://pypi.org/project/example-project
+      link: https://github.com/LordLundin/connection-monitor
 
 markdown_extensions:
   - toc:

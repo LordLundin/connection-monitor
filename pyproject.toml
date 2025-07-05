@@ -2,16 +2,20 @@
 name = "connection_monitor"
 version = "0.0.1"
 description = "a simple utility to monitor inbound and outgoing  connections"
-authors = ["Lord Lundin", "Claude Code", "dependncy authors"]
-repository = ""
-documentation = ""
+authors = ["Lord Lundin <LordLundin@users.noreply.github.com>"]
+repository = "https://github.com/LordLundin/connection-monitor"
+documentation = "https://github.com/LordLundin/connection-monitor#readme"
 readme = "README.md"
 packages = [
   {include = "connection_monitor"}
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<4.0"
+python = ">=3.9,<4.0"
+psutil = "^5.9.0"
+flask = "^3.0.0"
+flask-socketio = "^5.3.0"
+wxpython = {version = "^4.2.0", markers = "sys_platform == 'win32' or sys_platform == 'linux'"}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.0"
@@ -31,7 +35,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.mypy]
-files = ["example_project"]
+files = ["connection_monitor"]
 disallow_untyped_defs = "True"
 disallow_any_unimported = "True"
 no_implicit_optional = "True"
@@ -96,7 +100,7 @@ skip_empty = true
 
 [tool.coverage.run]
 branch = true
-source = ["example_project"]
+source = ["connection_monitor"]
 
 
 [tool.ruff.per-file-ignores]
